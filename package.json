@@ -14,7 +14,11 @@
         "browser-tabs",
         "browser"
     ],
-    "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:itsLucario/cordova-plugin-browsertab.git"
+    },
+    "publishConfig": { "registry": "https://npm.pkg.github.com/lucario" },
     "author": "Google, Inc.",
     "license": "Apache-2.0"
 }
