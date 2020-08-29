@@ -1,6 +1,6 @@
 {
     "name": "cordova-plugin-browsertab",
-    "version": "0.2.1",
+    "version": "0.2.5",
     "description": "In-app browser tabs for Android and iOS",
     "cordova": {
         "id": "cordova-plugin-browsertab",
@@ -14,6 +14,7 @@
         "browser-tabs",
         "browser"
     ],
+    "publishConfig": { "registry": "https://npm.pkg.github.com/" },
     "author": "Google, Inc.",
     "license": "Apache-2.0"
 }
