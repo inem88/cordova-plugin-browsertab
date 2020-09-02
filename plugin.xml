@@ -15,7 +15,7 @@
         <clobbers target="cordova.plugins.browsertab" />
     </js-module>
   
-    <preference name="CUSTOM_TAB_COLOR_RGB" default="#ffffff" />
+    <preference name="CUSTOM_TAB_COLOR_RGB" default="#1a73e8" />
   
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
