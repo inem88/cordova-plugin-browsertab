@@ -120,7 +120,7 @@ public class BrowserTab extends CordovaPlugin {
     try {
       cordova.getActivity().startActivity(customTabsIntent);
     } catch (ActivityNotFoundException ex) {
-      intent.setPackage(mCustomTabsBrowser);
+      customTabsIntent.setPackage(mCustomTabsBrowser);
       cordova.getActivity().startActivity(customTabsIntent);
     }
     // Load URL
