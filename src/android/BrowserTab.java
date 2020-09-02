@@ -115,8 +115,13 @@ public class BrowserTab extends CordovaPlugin {
     // Create Intent
     Intent customTabsIntent = customTabsIntentBuilder.build().intent;
     customTabsIntent.setData(Uri.parse(urlStr));
-    customTabsIntent.setPackage(mCustomTabsBrowser);
-    cordova.getActivity().startActivity(customTabsIntent);
+    customTabsIntent.setPackage("com.android.chrome");
+    try {
+      cordova.getActivity().startActivity(customTabsIntent);
+    } catch (ActivityNotFoundException ex) {
+      intent.setPackage(mCustomTabsBrowser);
+      cordova.getActivity().startActivity(customTabsIntent);
+    }
     // Load URL
     // customTabsIntent.launchUrl(cordova.getActivity(), Uri.parse(urlStr));
 
