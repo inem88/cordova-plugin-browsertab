@@ -20,6 +20,7 @@ import android.content.pm.ResolveInfo;
 import android.net.Uri;
 import android.support.customtabs.CustomTabsIntent;
 import android.util.Log;
+import android.content.ActivityNotFoundException;
 
 import java.util.Iterator;
 import java.util.List;
