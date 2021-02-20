@@ -10,13 +10,12 @@
         some mobile platforms, specifically Custom Tabs on Android and
         SFSafariViewController on iOS.
     </description>
-    <dependency id="cordova-plugin-compat" version="^1.0.0" />
 
     <js-module name="BrowserTab" src="www/browsertab.js">
         <clobbers target="cordova.plugins.browsertab" />
     </js-module>
   
-    <preference name="CUSTOM_TAB_COLOR_RGB" default="#ffffff" />
+    <preference name="CUSTOM_TAB_COLOR_RGB" default="#1a73e8" />
   
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
